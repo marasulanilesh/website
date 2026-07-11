@@ -1,18 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const tabButtons = document.querySelectorAll(".moxa-btn");
-    const tabViews = document.querySelectorAll(".tab-view");
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
 
     tabButtons.forEach(button => {
         button.addEventListener("click", () => {
-            const selectedTab = button.getAttribute("data-tab");
+            const targetTab = button.getAttribute("data-tab");
 
-            // Clean active classes from navigation elements
+            // Remove active status from all elements
             tabButtons.forEach(btn => btn.classList.remove("active"));
-            tabViews.forEach(view => view.classList.remove("active"));
+            tabContents.forEach(content => content.classList.remove("active"));
 
-            // Provision selected route state transitions
+            // Assign active status to the targeted section elements
             button.classList.add("active");
-            document.getElementById(selectedTab).classList.add("active");
+            const activePanel = document.getElementById(targetTab);
+            if (activePanel) {
+                activePanel.classList.add("active");
+            }
         });
     });
 });

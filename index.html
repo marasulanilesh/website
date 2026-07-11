@@ -3,134 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nilesh Marasula | DevSecOps Engineer</title>
+    <title>Nilesh Marasula | DevSecOps Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Bold Grotesque Fonts matching the design -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@700;800;900&family=Satoshi:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
 
-    <div class="moxa-wrapper">
-        
-        <!-- Hero Grid Section matching the screenshot layout -->
-        <header class="moxa-hero">
-            <div class="hero-left">
-                <h1 class="hero-title">
-                    HI, I'M NILESH.<br>
-                    A <span class="accent-orange">DEVSECOPS</span> ENGINEER<br> 
-                    BASED IN INDIA<span class="dot-accent">.</span>
-                </h1>
-                
-                <p class="hero-subtitle">
-                    SECURITY <span class="star">✦</span> CLOUD ARCHITECTURE <span class="star">✦</span> AUTOMATION
-                </p>
-            </div>
-            
-            <div class="hero-right">
-                <!-- Replace 'profile.png' with your actual cutout image link -->
-                <div class="image-frame">
-                    <img src="profile.png" alt="Nilesh Marasula" onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';">
-                    <div id="avatar-fallback" class="fallback-avatar" style="display:none;">
-                        <i class="fa-solid fa-user-shield"></i>
-                    </div>
-                    <!-- Geometric graphic element in the background -->
-                    <div class="geo-shape"></div>
+    <div class="portfolio-container">
+
+        <!-- Header Profile Identity -->
+        <header class="hero-card">
+            <div class="avatar-container">
+                <div class="avatar-ring"></div>
+                <div class="avatar-main">
+                    <i class="fa-solid fa-shield-halved"></i>
                 </div>
             </div>
+
+            <h1 class="profile-name">Nilesh Marasula</h1>
+            <p class="profile-title">DevSecOps Engineer</p>
+            <p class="profile-bio">Securing cloud native infrastructure, automating CI/CD defenses, and hardening environments seamlessly.</p>
         </header>
 
-        <!-- Segmented Tab Bar (The 3 Buttons Below The Hero) -->
-        <nav class="moxa-tabs">
-            <button class="moxa-btn active" data-tab="personal">
+        <!-- Dynamic Segmented Navigation Switcher -->
+        <nav class="tab-switcher">
+            <button class="tab-btn active" data-tab="personal">
+                <span class="btn-glow"></span>
                 <i class="fa-regular fa-user"></i> Personal Info
             </button>
-            <button class="moxa-btn" data-tab="professional">
-                <i class="fa-solid fa-terminal"></i> Professional Info
+            <button class="tab-btn" data-tab="professional">
+                <span class="btn-glow"></span>
+                <i class="fa-solid fa-briefcase"></i> Professional Info
             </button>
-            <button class="moxa-btn" data-tab="contact">
+            <button class="tab-btn" data-tab="contact">
+                <span class="btn-glow"></span>
                 <i class="fa-regular fa-paper-plane"></i> Contact Info
             </button>
         </nav>
 
-        <!-- Content Workspace Section -->
-        <main class="moxa-content-container">
-            
-            <!-- TAB 1: PERSONAL INFO -->
-            <section id="personal" class="tab-view active">
-                <h2 class="view-heading">Identity Matrix</h2>
-                <div class="moxa-grid">
-                    <div class="info-panel">
+        <!-- Main Display Content Panels -->
+        <main class="content-display">
+
+            <!-- Section: Personal Info -->
+            <section id="personal" class="tab-content active">
+                <div class="section-header">
+                    <h2>Personal Matrix</h2>
+                    <span class="accent-line"></span>
+                </div>
+                <div class="personal-grid">
+                    <div class="info-card variant-1">
                         <h3>About Me</h3>
-                        <p>Driven by an adversarial mindset and a deep passion for system automation, I specialize in bridging the traditional gap between rapid development and strict corporate security configurations.</p>
+                        <p>Driven by an adversarial mindset and a passion for automation, I focus on bridging the traditional divide between rapid software delivery and tight security guardrails.</p>
                     </div>
-                    <div class="info-panel">
+                    <div class="info-card variant-2">
                         <h3>Core Philosophies</h3>
-                        <ul class="bullet-list">
-                            <li>Shift-Left Testing Environments</li>
-                            <li>Zero-Trust Network Models</li>
-                            <li>Defensive Pipeline Automation</li>
+                        <ul class="values-list">
+                            <li><span class="bullet"></span> Shift-Left Architecture</li>
+                            <li><span class="bullet"></span> Zero-Trust by Default</li>
+                            <li><span class="bullet"></span> Infrastructure as Secure Code</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- TAB 2: PROFESSIONAL INFO -->
-            <section id="professional" class="tab-view">
-                <h2 class="view-heading">Technical Core Stack</h2>
-                <div class="moxa-grid full-width">
-                    <div class="info-panel">
+            <!-- Section: Professional Info -->
+            <section id="professional" class="tab-content">
+                <div class="section-header">
+                    <h2>Technical & Professional Stack</h2>
+                    <span class="accent-line"></span>
+                </div>
+
+                <div class="professional-wrapper">
+                    <div class="stack-box">
                         <h3>Security Instrumentations</h3>
-                        <div class="badge-row">
-                            <span class="moxa-badge">AWS Security</span>
-                            <span class="moxa-badge">Kubernetes Hardening</span>
-                            <span class="moxa-badge">Trivy Scanning</span>
-                            <span class="moxa-badge">DefectDojo</span>
-                            <span class="moxa-badge">SonarQube SAST</span>
-                            <span class="moxa-badge">SentinelOne EDR</span>
+                        <div class="pill-container">
+                            <span class="pill">AWS Security</span>
+                            <span class="pill">Kubernetes K8s</span>
+                            <span class="pill">Trivy</span>
+                            <span class="pill">DefectDojo</span>
+                            <span class="pill">SonarQube</span>
+                            <span class="pill">SentinelOne EDR</span>
                         </div>
                     </div>
-                    <div class="info-panel">
-                        <h3>Automation Tools</h3>
-                        <div class="badge-row">
-                            <span class="moxa-badge">GitHub Actions</span>
-                            <span class="moxa-badge">Jenkins Pipelines</span>
-                            <span class="moxa-badge">Terraform IaC</span>
-                            <span class="moxa-badge">Python Scripts</span>
-                            <span class="moxa-badge">Linux Operations</span>
+
+                    <div class="stack-box">
+                        <h3>Automation & Pipeline Tools</h3>
+                        <div class="pill-container">
+                            <span class="pill">CI/CD Security Automation</span>
+                            <span class="pill">GitHub Actions</span>
+                            <span class="pill">Jenkins</span>
+                            <span class="pill">Terraform IaC</span>
+                            <span class="pill">Python</span>
+                            <span class="pill">Linux Engineering</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- TAB 3: CONTACT INFO -->
-            <section id="contact" class="tab-view">
-                <h2 class="view-heading">Secure Handshake</h2>
-                <div class="links-vertical-stack">
-                    <a href="mailto:your-email@example.com" class="brutal-link">
-                        <span class="link-label">Secure Mail</span>
-                        <strong class="link-value">your-email@example.com</strong>
-                        <i class="fa-solid fa-arrow-right-long"></i>
-                    </a>
-                    
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="brutal-link">
-                        <span class="link-label">LinkedIn</span>
-                        <strong class="link-value">linkedin.com/in/nilesh-marasula</strong>
-                        <i class="fa-solid fa-arrow-right-long"></i>
+            <!-- Section: Contact Info -->
+            <section id="contact" class="tab-content">
+                <div class="section-header">
+                    <h2>Secure Handshake</h2>
+                    <span class="accent-line"></span>
+                </div>
+                <div class="contact-links-grid">
+                    <a href="mailto:nilesh.marasula@gmail.com" class="luxury-link">
+                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="link-text">
+                            <span>Email Address</span>
+                            <strong>nilesh.marasula@gmail.com</strong>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow"></i>
                     </a>
 
-                    <a href="https://github.com/marasulanilesh" target="_blank" class="brutal-link">
-                        <span class="link-label">Source Control</span>
-                        <strong class="link-value">github.com/marasulanilesh</strong>
-                        <i class="fa-solid fa-arrow-right-long"></i>
+                    <a href="https://linkedin.com/in/marasulanilesh" target="_blank" class="luxury-link">
+                        <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="link-text">
+                            <span>LinkedIn Connection</span>
+                            <strong>linkedin.com/in/marasulanilesh</strong>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </a>
+
+                    <a href="https://github.com/marasulanilesh" target="_blank" class="luxury-link">
+                        <div class="icon-box"><i class="fa-brands fa-github"></i></div>
+                        <div class="link-text">
+                            <span>GitHub Source</span>
+                            <strong>github.com/marasulanilesh</strong>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow"></i>
                     </a>
                 </div>
             </section>
 
         </main>
 
+        <!-- Footer -->
         <footer>
-            <p>© 2026 Nilesh Marasula. Engineered with precision.</p>
+            <p>© 2026 Nilesh Marasula. Engineered with high security standards.</p>
         </footer>
 
     </div>
