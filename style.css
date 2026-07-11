@@ -1,11 +1,11 @@
 :root {
-    --bg-base: #090b11;
-    --card-surface: rgba(17, 22, 34, 0.65);
-    --card-border: rgba(255, 255, 255, 0.04);
-    --gold-accent: #e2b86b;
-    --gold-glow: rgba(226, 184, 107, 0.15);
-    --text-primary: #f3f4f6;
-    --text-muted: #8e9bb0;
+    --bg-base: #07090e;
+    --card-surface: #111625;
+    --card-border: rgba(255, 255, 255, 0.08);
+    --gold-accent: #f5c87a;
+    --gold-glow: rgba(245, 200, 122, 0.2);
+    --text-primary: #ffffff;
+    --text-muted: #94a3b8;
     --font-header: 'Cabinet Grotesk', sans-serif;
     --font-body: 'Satoshi', sans-serif;
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -28,8 +28,7 @@ body {
     align-items: center;
     padding: 60px 20px;
     background-image: 
-        radial-gradient(circle at 50% -20%, rgba(226, 184, 107, 0.07) 0%, transparent 50%),
-        radial-gradient(circle at 10% 80%, rgba(100, 116, 139, 0.03) 0%, transparent 40%);
+        radial-gradient(circle at 50% -20%, rgba(245, 200, 122, 0.08) 0%, transparent 60%);
 }
 
 .portfolio-container {
@@ -40,16 +39,14 @@ body {
     gap: 24px;
 }
 
-/* Premium Profile Header Card Design */
+/* Hero Identity Card */
 .hero-card {
     background: var(--card-surface);
     border: 1px solid var(--card-border);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
     border-radius: 24px;
     padding: 48px 40px;
     text-align: center;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
 }
 
 .avatar-container {
@@ -62,50 +59,49 @@ body {
 .avatar-ring {
     position: absolute;
     top: -4px; left: -4px; right: -4px; bottom: -4px;
-    border: 1px solid var(--gold-accent);
+    border: 2px solid var(--gold-accent);
     border-radius: 50%;
-    opacity: 0.3;
+    opacity: 0.4;
     animation: pulseRing 4s infinite linear;
 }
 
 .avatar-main {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #182035, #0f1424);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #182035;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     color: var(--gold-accent);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes pulseRing {
-    0% { transform: scale(1); opacity: 0.3; }
-    50% { transform: scale(1.06); opacity: 0.6; }
-    100% { transform: scale(1); opacity: 0.3; }
+    0% { transform: scale(1); opacity: 0.4; }
+    50% { transform: scale(1.08); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 0.4; }
 }
 
+/* FIXED HIGHER VISIBILITY TYPOGRAPHY */
 .profile-name {
     font-family: var(--font-header);
-    font-size: 42px;
-    font-weight: 800;
+    font-size: 44px;
+    font-weight: 900; /* Extra bold text */
     letter-spacing: -0.5px;
-    margin-bottom: 6px;
-    background: linear-gradient(to right, #ffffff, #d1d5db);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+    color: #ffffff; /* Stark solid white visibility */
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
 .profile-title {
-    font-size: 16px;
-    color: var(--gold-accent);
+    font-size: 18px;
+    color: var(--gold-accent); /* Crisp Gold color */
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 600;
-    margin-bottom: 18px;
+    font-weight: 700; /* Pure bold text */
+    margin-bottom: 20px;
 }
 
 .profile-bio {
@@ -116,12 +112,12 @@ body {
     margin: 0 auto;
 }
 
-/* Tab Switcher Interface Custom Controls */
+/* Tab Switcher Module */
 .tab-switcher {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
-    background: rgba(14, 19, 31, 0.4);
+    background: rgba(14, 19, 31, 0.6);
     padding: 8px;
     border-radius: 16px;
     border: 1px solid var(--card-border);
@@ -134,7 +130,7 @@ body {
     color: var(--text-muted);
     padding: 16px;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
     border-radius: 12px;
     cursor: pointer;
     display: flex;
@@ -142,19 +138,17 @@ body {
     justify-content: center;
     gap: 8px;
     transition: var(--transition-smooth);
-    overflow: hidden;
 }
 
 .tab-btn:hover {
     color: var(--text-primary);
-    background: rgba(255, 255, 255, 0.02);
 }
 
 .tab-btn.active {
     background: var(--card-surface);
     color: var(--gold-accent);
     border: 1px solid var(--card-border);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .tab-btn.active::after {
@@ -162,13 +156,12 @@ body {
     position: absolute;
     bottom: 0;
     width: 24px;
-    height: 2px;
+    height: 3px;
     background: var(--gold-accent);
     border-radius: 4px;
-    box-shadow: 0 0 10px var(--gold-accent);
 }
 
-/* Content Views Architecture */
+/* Content Layout Components */
 .content-display {
     position: relative;
 }
@@ -179,7 +172,7 @@ body {
     border: 1px solid var(--card-border);
     border-radius: 24px;
     padding: 40px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
     animation: revealEffect 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
@@ -203,16 +196,14 @@ body {
     font-family: var(--font-header);
     font-size: 22px;
     font-weight: 700;
-    color: var(--text-primary);
 }
 
 .accent-line {
     flex-grow: 1;
     height: 1px;
-    background: linear-gradient(to right, rgba(226, 184, 107, 0.2), transparent);
+    background: linear-gradient(to right, rgba(245, 200, 122, 0.3), transparent);
 }
 
-/* Grid Framework & Typography Variants */
 .personal-grid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -220,8 +211,8 @@ body {
 }
 
 .info-card {
-    background: rgba(255, 255, 255, 0.01);
-    border: 1px solid rgba(255, 255, 255, 0.02);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
     padding: 28px;
     border-radius: 16px;
 }
@@ -260,7 +251,6 @@ body {
     border-radius: 50%;
 }
 
-/* Stack Layout Components */
 .professional-wrapper {
     display: flex;
     flex-direction: column;
@@ -268,8 +258,8 @@ body {
 }
 
 .stack-box {
-    background: rgba(255, 255, 255, 0.01);
-    border: 1px solid rgba(255, 255, 255, 0.02);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
     padding: 28px;
     border-radius: 16px;
 }
@@ -278,7 +268,6 @@ body {
     font-size: 15px;
     color: var(--text-muted);
     margin-bottom: 16px;
-    font-weight: 500;
 }
 
 .pill-container {
@@ -288,21 +277,13 @@ body {
 }
 
 .pill {
-    background: #111625;
-    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: #0f1320;
+    border: 1px solid rgba(255, 255, 255, 0.06);
     padding: 8px 16px;
     border-radius: 100px;
     font-size: 14px;
-    color: var(--text-primary);
-    transition: var(--transition-smooth);
 }
 
-.pill:hover {
-    border-color: var(--gold-accent);
-    background: rgba(226, 184, 107, 0.02);
-}
-
-/* Contact Module Specific Designs */
 .contact-links-grid {
     display: flex;
     flex-direction: column;
@@ -312,8 +293,8 @@ body {
 .luxury-link {
     display: flex;
     align-items: center;
-    background: rgba(255, 255, 255, 0.01);
-    border: 1px solid rgba(255, 255, 255, 0.02);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
     padding: 20px 24px;
     border-radius: 16px;
     text-decoration: none;
@@ -324,7 +305,7 @@ body {
 .icon-box {
     width: 44px;
     height: 44px;
-    background: #131929;
+    background: #182035;
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -343,29 +324,20 @@ body {
 .link-text span {
     font-size: 13px;
     color: var(--text-muted);
-    margin-bottom: 2px;
 }
 
 .link-text strong {
     font-size: 15px;
-    font-weight: 500;
 }
 
 .arrow {
     color: var(--text-muted);
-    font-size: 14px;
-    transition: var(--transition-smooth);
 }
 
 .luxury-link:hover {
-    background: rgba(255, 255, 255, 0.02);
-    border-color: rgba(226, 184, 107, 0.3);
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(245, 200, 122, 0.4);
     transform: translateX(4px);
-}
-
-.luxury-link:hover .arrow {
-    color: var(--gold-accent);
-    transform: translateX(2px);
 }
 
 footer {
@@ -375,18 +347,8 @@ footer {
     font-size: 13px;
 }
 
-/* Mobile Responsiveness Updates */
 @media (max-width: 680px) {
-    .personal-grid {
+    .personal-grid, .tab-switcher {
         grid-template-columns: 1fr;
-    }
-    .tab-switcher {
-        grid-template-columns: 1fr;
-    }
-    .hero-card {
-        padding: 36px 20px;
-    }
-    .profile-name {
-        font-size: 32px;
     }
 }
