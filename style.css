@@ -95,7 +95,7 @@ body {
 .card-corner.bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
 .card-corner.br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
 
-/* Large Display Avatar Sizing Rules */
+/* Large Display Avatar Frame Parameters */
 .avatar-zone {
     position: relative;
     width: 160px;
