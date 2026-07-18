@@ -90,7 +90,7 @@ body {
 .card-corner.bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
 .card-corner.br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
 
-/* 260px Fixed Structural Geometry */
+/* 260px Core Geometry */
 .avatar-zone {
     position: relative;
     width: 260px;
@@ -114,8 +114,8 @@ body {
 .profile-avatar-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;           /* Keeps side empty areas permanently closed */
-    object-position: center 30%;   /* Calibrated to 30% for full face + head visualization */
+    object-fit: cover;           /* Keeps background segments invisible */
+    object-position: center 35%;   /* Adjusted to 35% to securely framing head + full chin */
     display: block;
 }
 
