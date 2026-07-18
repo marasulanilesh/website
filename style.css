@@ -128,51 +128,22 @@ body {
     font-size: 46px;
     font-weight: 700;
     letter-spacing: -1px;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
 }
 
-.badge-row {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 24px;
-}
-
-.cyber-badge {
-    background: rgba(34, 211, 238, 0.08);
-    border: 1px solid rgba(34, 211, 238, 0.2);
-    padding: 6px 16px;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 600;
+.profile-title-bold {
+    font-size: 20px;
     color: var(--cyan-accent);
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    font-weight: 700;
     letter-spacing: 0.5px;
+    margin-bottom: 20px;
 }
-
-.cyber-badge.live {
-    background: rgba(52, 211, 153, 0.08);
-    border-color: rgba(52, 211, 153, 0.2);
-    color: var(--emerald-accent);
-}
-
-.pulse-dot {
-    width: 6px; height: 6px;
-    background: var(--emerald-accent);
-    border-radius: 50%;
-    box-shadow: 0 0 10px var(--emerald-accent);
-    animation: blink 2s infinite;
-}
-
-@keyframes blink { 50% { opacity: 0.3; } }
 
 .profile-bio {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--text-muted);
     line-height: 1.7;
-    max-width: 600px;
+    max-width: 680px;
     margin: 0 auto;
 }
 
@@ -390,7 +361,6 @@ body {
     color: var(--cyan-accent);
 }
 
-/* Highlighting core architectures */
 .pill.structural {
     border-color: rgba(34, 211, 238, 0.25);
     background: rgba(34, 211, 238, 0.03);
@@ -461,7 +431,6 @@ body {
     transition: var(--transition-cyber);
 }
 
-/* Link Active Hover Modifiers */
 .luxury-link:hover {
     background: var(--panel-surface-hover);
     border-color: var(--border-cyan-active);
