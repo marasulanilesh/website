@@ -112,10 +112,10 @@ body {
 }
 
 .profile-avatar-img {
-    width: 140%;                
-    height: 140%;               
-    object-fit: cover;          
-    object-position: 53% 15%;   /* Centered horizontally, adjusted vertically to fit the top of the head */
+    width: 140%;                /* Forces the image to expand past the side boundaries */
+    height: 140%;               /* Uniform aspect expansion */
+    object-fit: cover;          /* Crops out outer margins cleanly */
+    object-position: 53% 36%;   /* Centers your face perfectly and strips away the left side void */
     display: block;
 }
 
@@ -390,5 +390,5 @@ footer p { color: var(--text-muted); font-size: 13px; letter-spacing: 0.5px; }
     .hero-card { padding: 40px 24px; }
     .profile-name { font-size: 36px; }
     .avatar-zone, .avatar-main { width: 140px; height: 140px; } 
-    .profile-avatar-img { width: 140%; height: 140%; object-position: 53% 15%; }
+    .profile-avatar-img { width: 140%; height: 140%; }
 }
