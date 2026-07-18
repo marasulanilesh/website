@@ -3,42 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nilesh Marasula | DevSecOps Portfolio</title>
+    <title>Nilesh Marasula | DevSecOps Architecture Matrix</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@700;800;900&family=Satoshi:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- Cyber Decorative Mesh background -->
+    <div class="cyber-grid-bg"></div>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
     <div class="portfolio-container">
 
-        <!-- Header Profile Identity -->
+        <!-- Header Profile Identity Matrix -->
         <header class="hero-card">
-            <div class="avatar-container">
-                <div class="avatar-ring"></div>
+            <div class="card-corner tl"></div>
+            <div class="card-corner tr"></div>
+            <div class="card-corner bl"></div>
+            <div class="card-corner br"></div>
+            
+            <div class="avatar-zone">
+                <div class="radar-pulse"></div>
                 <div class="avatar-main">
-                    <i class="fa-solid fa-shield-halved"></i>
+                    <i class="fa-solid fa-shield-halved security-node"></i>
                 </div>
             </div>
 
             <h1 class="profile-name">Nilesh Marasula</h1>
-            <p class="profile-title">DevSecOps Engineer</p>
+            <div class="badge-row">
+                <span class="cyber-badge"><i class="fa-solid fa-terminal"></i> DevSecOps Engineer</span>
+                <span class="cyber-badge live"><span class="pulse-dot"></span> System Protected</span>
+            </div>
             <p class="profile-bio">Securing cloud native infrastructure, automating CI/CD defenses, and hardening environments seamlessly.</p>
         </header>
 
         <!-- Dynamic Segmented Navigation Switcher -->
         <nav class="tab-switcher">
             <button class="tab-btn active" data-tab="personal">
-                <span class="btn-glow"></span>
-                <i class="fa-regular fa-user"></i> Personal Info
+                <i class="fa-regular fa-user"></i>
+                <span>Personal Info</span>
             </button>
             <button class="tab-btn" data-tab="professional">
-                <span class="btn-glow"></span>
-                <i class="fa-solid fa-briefcase"></i> Professional Info
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Professional Info</span>
             </button>
             <button class="tab-btn" data-tab="contact">
-                <span class="btn-glow"></span>
-                <i class="fa-regular fa-paper-plane"></i> Contact Info
+                <i class="fa-regular fa-paper-plane"></i>
+                <span>Contact Info</span>
             </button>
         </nav>
 
@@ -47,65 +60,107 @@
 
             <!-- Section: Personal Info -->
             <section id="personal" class="tab-content active">
-                <div class="section-header">
-                    <h2>Personal Matrix</h2>
-                    <span class="accent-line"></span>
-                </div>
                 <div class="personal-grid">
                     <!-- Personal Details -->
-                    <div class="info-card variant-1">
-                        <h3>My Personal Details</h3>
-                        <ul class="values-list details-list">
-                            <li><span class="bullet"></span> <strong>Name:</strong> Nilesh Marasula</li>
-                            <li><span class="bullet"></span> <strong>DOB:</strong> 11th October 1999</li>
-                            <li><span class="bullet"></span> <strong>Permanent Location:</strong> Bengaluru, Karnataka</li>
-                            <li><span class="bullet"></span> <strong>Native:</strong> Nellore, Andhra Pradesh</li>
-                            <li><span class="bullet"></span> <strong>Education:</strong> B.E in Computer Science</li>
+                    <div class="info-card architecture-card">
+                        <div class="card-header">
+                            <i class="fa-solid fa-fingerprint icon-accent"></i>
+                            <h3>My Personal Details</h3>
+                        </div>
+                        <ul class="matrix-list">
+                            <li>
+                                <span class="label">Name</span>
+                                <span class="value">Nilesh Marasula</span>
+                            </li>
+                            <li>
+                                <span class="label">DOB</span>
+                                <span class="value">11th October 1999</span>
+                            </li>
+                            <li>
+                                <span class="label">Location</span>
+                                <span class="value"><i class="fa-solid fa-location-dot"></i> Bengaluru, KA</span>
+                            </li>
+                            <li>
+                                <span class="label">Native</span>
+                                <span class="value">Nellore, AP</span>
+                            </li>
+                            <li>
+                                <span class="label">Education</span>
+                                <span class="value text-highlight">B.E in Computer Science</span>
+                            </li>
                         </ul>
                     </div>
                     
                     <!-- Personal Milestones -->
-                    <div class="info-card variant-2">
-                        <h3>My Personal Milestones</h3>
-                        <ul class="values-list">
-                            <li><span class="bullet"></span> Topper of the Engineering College & awarded Best Passed Out Student (2017-2021)</li>
-                            <li><span class="bullet"></span> Trained AWS Cloud Engineer</li>
-                            <li><span class="bullet"></span> Trained DevOps Engineer</li>
-                            <li><span class="bullet"></span> Property owner in a gated community in Varthur, Bengaluru</li>
-                        </ul>
+                    <div class="info-card milestone-card">
+                        <div class="card-header">
+                            <i class="fa-solid fa-trophy icon-accent"></i>
+                            <h3>My Personal Milestones</h3>
+                        </div>
+                        <div class="milestone-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Academic Excellence</h4>
+                                    <p>College Topper & awarded Best Passed Out Student (2017-2021).</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Cloud Specialization</h4>
+                                    <p>Trained AWS Cloud Engineer.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Automation Systems</h4>
+                                    <p>Trained DevOps Engineer.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Asset Milestones</h4>
+                                    <p>Property owner in a gated community in Varthur, Bengaluru.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- Section: Professional Info -->
             <section id="professional" class="tab-content">
-                <div class="section-header">
-                    <h2>Technical & Professional Stack</h2>
-                    <span class="accent-line"></span>
-                </div>
-
                 <div class="professional-wrapper">
                     <div class="stack-box">
-                        <h3>Security Instrumentations</h3>
+                        <div class="card-header">
+                            <i class="fa-solid fa-vault icon-accent"></i>
+                            <h3>Security Instrumentations</h3>
+                        </div>
                         <div class="pill-container">
-                            <span class="pill">AWS Security</span>
-                            <span class="pill">Kubernetes K8s</span>
-                            <span class="pill">Trivy</span>
-                            <span class="pill">DefectDojo</span>
-                            <span class="pill">SonarQube</span>
-                            <span class="pill">SentinelOne EDR</span>
+                            <span class="pill structural"><i class="fa-brands fa-aws"></i> AWS Security</span>
+                            <span class="pill structural"><i class="fa-solid fa-cubes"></i> Kubernetes K8s</span>
+                            <span class="pill"><i class="fa-solid fa-radar"></i> Trivy</span>
+                            <span class="pill"><i class="fa-solid fa-box-tissue"></i> DefectDojo</span>
+                            <span class="pill"><i class="fa-solid fa-code-branch"></i> SonarQube</span>
+                            <span class="pill"><i class="fa-solid fa-shield-virus"></i> SentinelOne EDR</span>
                         </div>
                     </div>
 
                     <div class="stack-box">
-                        <h3>Automation & Pipeline Tools</h3>
+                        <div class="card-header">
+                            <i class="fa-solid fa-gears icon-accent"></i>
+                            <h3>Automation & Pipeline Tools</h3>
+                        </div>
                         <div class="pill-container">
-                            <span class="pill">CI/CD Security Automation</span>
-                            <span class="pill">GitHub Actions</span>
-                            <span class="pill">Jenkins</span>
-                            <span class="pill">Terraform IaC</span>
-                            <span class="pill">Python</span>
-                            <span class="pill">Linux Engineering</span>
+                            <span class="pill structural"><i class="fa-solid fa-robot"></i> CI/CD Security Automation</span>
+                            <span class="pill"><i class="fa-brands fa-github"></i> GitHub Actions</span>
+                            <span class="pill"><i class="fa-brands fa-jenkins"></i> Jenkins</span>
+                            <span class="pill structural"><i class="fa-solid fa-cloud-arrow-up"></i> Terraform IaC</span>
+                            <span class="pill"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="pill"><i class="fa-brands fa-linux"></i> Linux Engineering</span>
                         </div>
                     </div>
                 </div>
@@ -113,27 +168,27 @@
 
             <!-- Section: Contact Info -->
             <section id="contact" class="tab-content">
-                <div class="section-header">
-                    <h2>Secure Handshake</h2>
-                    <span class="accent-line"></span>
-                </div>
                 <div class="contact-links-grid">
-                    <a href="mailto:nilesh.marasula@gmail.com" class="luxury-link">
-                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="link-text">
-                            <span>Email Address</span>
-                            <strong>nilesh.marasula@gmail.com</strong>
+                    <a href="mailto:nilesh.marasula@gmail.com" class="luxury-link email-glow">
+                        <div class="link-left">
+                            <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="link-text">
+                                <span>Secure Email Router</span>
+                                <strong>nilesh.marasula@gmail.com</strong>
+                            </div>
                         </div>
-                        <i class="fa-solid fa-chevron-right arrow"></i>
+                        <div class="action-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/nilesh-marasula-998a32225/" target="_blank" class="luxury-link">
-                        <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
-                        <div class="link-text">
-                            <span>LinkedIn Connection</span>
-                            <strong>linkedin.com/in/nilesh-marasula-998a32225</strong>
+                    <a href="https://www.linkedin.com/in/nilesh-marasula-998a32225/" target="_blank" class="luxury-link linkedin-glow">
+                        <div class="link-left">
+                            <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="link-text">
+                                <span>LinkedIn Architecture Network</span>
+                                <strong>linkedin.com/in/nilesh-marasula-998a32225</strong>
+                            </div>
                         </div>
-                        <i class="fa-solid fa-chevron-right arrow"></i>
+                        <div class="action-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
                     </a>
                 </div>
             </section>
@@ -142,7 +197,8 @@
 
         <!-- Footer -->
         <footer>
-            <p>© 2026 Nilesh Marasula. Engineered with high security standards.</p>
+            <div class="footer-divider"></div>
+            <p>© 2026 Nilesh Marasula. Cryptographically Hardened Structure.</p>
         </footer>
 
     </div>

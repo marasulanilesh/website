@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
         button.addEventListener("click", () => {
             const targetTab = button.getAttribute("data-tab");
 
-            // Remove active status from all elements
+            // Remove active system states
             tabButtons.forEach(btn => btn.classList.remove("active"));
             tabContents.forEach(content => content.classList.remove("active"));
 
-            // Assign active status to the targeted section elements
+            // Set current target active indicators
             button.classList.add("active");
             const activePanel = document.getElementById(targetTab);
             if (activePanel) {
