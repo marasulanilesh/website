@@ -90,7 +90,7 @@ body {
 .card-corner.bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
 .card-corner.br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
 
-/* Perfected 260px Balanced Frame Configuration */
+/* 260px Fixed Structural Geometry */
 .avatar-zone {
     position: relative;
     width: 260px;
@@ -114,8 +114,8 @@ body {
 .profile-avatar-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;        /* Fills the circle to delete blank space blocks completely */
-    object-position: center 15%; /* Keeps crop centered correctly around your facial structure */
+    object-fit: cover;           /* Keeps side empty areas permanently closed */
+    object-position: center 30%;   /* Calibrated to 30% for full face + head visualization */
     display: block;
 }
 
@@ -389,5 +389,5 @@ footer p { color: var(--text-muted); font-size: 13px; letter-spacing: 0.5px; }
     .personal-grid, .contact-links-grid { grid-template-columns: 1fr; }
     .hero-card { padding: 40px 24px; }
     .profile-name { font-size: 36px; }
-    .avatar-zone, .avatar-main { width: 140px; height: 140px; } /* Scales down cleanly on small viewports */
+    .avatar-zone, .avatar-main { width: 140px; height: 140px; } 
 }
