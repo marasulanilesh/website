@@ -95,24 +95,25 @@ body {
 .card-corner.bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
 .card-corner.br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
 
-/* Expanded Display Avatar Size Parameters */
+/* Large Display Avatar Sizing Rules */
 .avatar-zone {
     position: relative;
-    width: 150px;     /* Increased from 100px */
-    height: 150px;    /* Increased from 100px */
+    width: 160px;
+    height: 160px;
     margin: 0 auto 28px auto;
 }
 
 .avatar-main {
-    width: 100%; height: 100%;
+    width: 160px;
+    height: 160px;
     background: rgba(17, 24, 39, 0.8);
     border: 2px solid var(--cyan-accent);
     border-radius: 50%;
+    box-shadow: 0 0 30px var(--cyan-glow);
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 30px var(--cyan-glow);
-    overflow: hidden;
 }
 
 .profile-avatar-img {
@@ -480,7 +481,7 @@ footer p {
         font-size: 36px;
     }
     
-    .avatar-zone {
+    .avatar-zone, .avatar-main {
         width: 120px;
         height: 120px;
     }
