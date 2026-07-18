@@ -95,9 +95,11 @@ body {
 .card-corner.bl { bottom: -1px; left: -1px; border-right: none; border-top: none; }
 .card-corner.br { bottom: -1px; right: -1px; border-left: none; border-top: none; }
 
+/* Expanded Display Avatar Size Parameters */
 .avatar-zone {
     position: relative;
-    width: 100px; height: 100px;
+    width: 150px;     /* Increased from 100px */
+    height: 150px;    /* Increased from 100px */
     margin: 0 auto 28px auto;
 }
 
@@ -109,11 +111,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 25px var(--cyan-glow);
-    overflow: hidden; /* Ensures image fits within the rounded borders */
+    box-shadow: 0 0 30px var(--cyan-glow);
+    overflow: hidden;
 }
 
-/* Custom Profile Image Sizing Rules */
 .profile-avatar-img {
     width: 100%;
     height: 100%;
@@ -477,5 +478,10 @@ footer p {
 
     .profile-name {
         font-size: 36px;
+    }
+    
+    .avatar-zone {
+        width: 120px;
+        height: 120px;
     }
 }
